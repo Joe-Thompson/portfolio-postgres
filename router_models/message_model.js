@@ -12,6 +12,7 @@ async function add_message(message) {
 async function find_by_id(id) {
     try {
         return db('messages').where('id', id).select('*');
+        // adding in comments here to help understand code
     } catch (e) {
         return e
     }
