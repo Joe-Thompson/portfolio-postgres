@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-postgres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon -r dotenv/config server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joe-Thompson/portfolio-postgres.git"
+  },
+  "author": "joe-thompson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joe-Thompson/portfolio-postgres/issues"
+  },
+  "homepage": "https://github.com/Joe-Thompson/portfolio-postgres#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "knex": "^0.21.14",
+    "pg": "^8.5.1"
+  }
+}
