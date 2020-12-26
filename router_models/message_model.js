@@ -27,7 +27,7 @@ async function get_messages() {
 
 async function delete_message(id) {
     try {
-        return await db('messages').del('id', id)
+        return await db('messages').del().where('id', id);
     } catch (e) {
         return e
     }
