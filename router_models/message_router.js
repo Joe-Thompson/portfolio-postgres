@@ -35,4 +35,14 @@ router.post('/', async (req, res, next) => {
    }
 });
 
+router.delete('/delete', async (req, res, next) => {
+   try {
+       let { id } = req.body
+       let newly_deleted = await helpers.delete_message(id);
+       res.status(204).json(newly_deleted);
+   } catch (e) {
+       return e
+   }
+});
+
 module.exports = router;
