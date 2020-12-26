@@ -25,8 +25,17 @@ async function get_messages() {
     }
 }
 
+async function delete_message(id) {
+    try {
+        return await db('messages').del('id', id)
+    } catch (e) {
+        return e
+    }
+}
+
 module.exports = {
     add_message,
     find_by_id,
-    get_messages
+    get_messages,
+    delete_message
 }
